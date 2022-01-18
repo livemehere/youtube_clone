@@ -41,3 +41,12 @@ h1 {
   padding: 0;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .search {
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+  }
+}

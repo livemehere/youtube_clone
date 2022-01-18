@@ -13,5 +13,6 @@
 @media screen and (max-width: 1000px) {
   .videos {
     height: auto;
+    margin-top: 70px;
   }
 }

@@ -22,8 +22,9 @@ h4 {
     position: fixed;
     top: 0;
     z-index: 100;
+    margin-top: 70px;
   }
   .description {
-    margin-top: 40vw;
+    margin-top: 70vw;
   }
 }
