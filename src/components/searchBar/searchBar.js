@@ -33,7 +33,7 @@ export default function SearchBar({ setVideos, youtube, setSelectedVideo }) {
           window.location.reload(false);
         }}
       >
-        <img src="/logo.png" alt="logo" width="50" height="25" />
+        <img src="/youtube_clone/logo.png" alt="logo" width="50" height="25" />
         <h1>KONGTUBE</h1>
       </div>
       <form onSubmit={onSubmit}>
