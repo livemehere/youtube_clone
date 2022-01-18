@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  background-color: #333;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  display: block;
+  height: 40px;
+  border: 2px solid #777;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
