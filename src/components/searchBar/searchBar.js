@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./searchBar.module.css";
 
-export default function SearchBar({ setVideos, youtube }) {
+export default function SearchBar({ setVideos, youtube, setSelectedVideo }) {
   const [query, setQuery] = useState("");
   const onSubmit = (e) => {
     e.preventDefault();
@@ -21,8 +21,8 @@ export default function SearchBar({ setVideos, youtube }) {
         data.items.map((item) => ({ ...item, id: item.id.videoId }))
       ) //
       .then((items) => {
-        console.log(items);
         setVideos(items);
+        setSelectedVideo(null);
       });
   };
   return (

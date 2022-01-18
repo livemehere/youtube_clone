@@ -1,7 +1,6 @@
 import styles from "./detail.module.css";
 
 export default function Detail({ video, video: { snippet } }) {
-  console.log(snippet);
   return (
     <div>
       <iframe
@@ -11,7 +10,7 @@ export default function Detail({ video, video: { snippet } }) {
         frameBorder="0"
         allowFullScreen={true}
       ></iframe>
-      <div>
+      <div className={styles.description}>
         <h1>{snippet.title}</h1>
         <h4>{snippet.publishedAt}</h4>
         <p>{snippet.description}</p>

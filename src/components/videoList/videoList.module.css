@@ -3,4 +3,15 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   color: white;
+  height: 150vh;
+  overflow: scroll;
+}
+.videos::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .videos {
+    height: auto;
+  }
 }

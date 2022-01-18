@@ -11,7 +11,6 @@ function App({ youtube }) {
     youtube
       .mostPopular() //
       .then((data) => {
-        console.log(data.items);
         setVideos(data.items);
       });
   };
@@ -21,7 +20,11 @@ function App({ youtube }) {
   }, []);
   return (
     <div className="App">
-      <SearchBar setVideos={setVideos} youtube={youtube} />
+      <SearchBar
+        setVideos={setVideos}
+        setSelectedVideo={setSelectedVideo}
+        youtube={youtube}
+      />
       <div className={selectedVideo && "content"}>
         <div className="detail">
           {selectedVideo && <Detail video={selectedVideo} />}
