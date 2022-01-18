@@ -1,9 +1,9 @@
 import styles from "./video.module.css";
 
-export default function Video({ video }) {
+export default function Video({ video, setSelectedVideo }) {
   let title = video.snippet.title;
   return (
-    <div className={styles.video}>
+    <div className={styles.video} onClick={() => setSelectedVideo(video)}>
       <img
         className={styles.thumbnail}
         src={video.snippet.thumbnails.high.url}

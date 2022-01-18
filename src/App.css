@@ -7,3 +7,20 @@ body {
   padding: 0;
   background-color: rgb(34, 34, 34);
 }
+
+.content {
+  display: flex;
+}
+.detail {
+  flex: 1 1 70%;
+}
+.list {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+}

@@ -15,10 +15,15 @@ export default function SearchBar({ setVideos, youtube }) {
   };
 
   const search = (query) => {
-    youtube.search(query).then((data) => {
-      console.log(data.items);
-      setVideos(data.items);
-    });
+    youtube
+      .search(query) //
+      .then((data) =>
+        data.items.map((item) => ({ ...item, id: item.id.videoId }))
+      ) //
+      .then((items) => {
+        console.log(items);
+        setVideos(items);
+      });
   };
   return (
     <div className={styles.search}>
