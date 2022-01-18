@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/? -->
+<html lang="kr"><canvas style="inset: 0px; pointer-events: none; position: fixed; z-index: 1000000000;" width="693" height="482"></canvas><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <title>KongTube</title>
+  <script defer="" src="./KongTube_files/bundle.js"></script><style>* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+}
+
+.content {
+  display: flex;
+}
+.detail {
+  flex: 1 1 70%;
+}
+.list {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsU0FBUztFQUNULFVBQVU7RUFDVixpQ0FBaUM7QUFDbkM7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUNBO0VBQ0UsYUFBYTtFQUNiLGFBQWE7QUFDZjs7QUFFQTtFQUNFO0lBQ0Usc0JBQXNCO0VBQ3hCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDM0LCAzNCwgMzQpO1xufVxuXG4uY29udGVudCB7XG4gIGRpc3BsYXk6IGZsZXg7XG59XG4uZGV0YWlsIHtcbiAgZmxleDogMSAxIDcwJTtcbn1cbi5saXN0IHtcbiAgZmxleDogMSAxIDMwJTtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTAwMHB4KSB7XG4gIC5jb250ZW50IHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.video_video__GUJ8z {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.video_thumbnail__Yl53S {
+  cursor: pointer;
+  transition: all 250ms;
+}
+.video_thumbnail__Yl53S:hover {
+  transform: scale(1.02);
+}
+
+.video_title__VIl1k {
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3ZpZGVvL3ZpZGVvLm1vZHVsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLnZpZGVvIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgbWFyZ2luLWJvdHRvbTogMXJlbTtcbn1cblxuLnRodW1ibmFpbCB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdHJhbnNpdGlvbjogYWxsIDI1MG1zO1xufVxuLnRodW1ibmFpbDpob3ZlciB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4wMik7XG59XG5cbi50aXRsZSB7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.videoList_videos__NmqaL {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  color: white;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3ZpZGVvTGlzdC92aWRlb0xpc3QubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYiwyREFBMkQ7RUFDM0QsY0FBYztFQUNkLFlBQVk7QUFDZCIsInNvdXJjZXNDb250ZW50IjpbIi52aWRlb3Mge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgbWlubWF4KDMwMHB4LCAxZnIpKTtcbiAgZ3JpZC1nYXA6IDEwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.searchBar_search__SjM\+Z {
+  display: flex;
+  background-color: #333;
+  margin-bottom: 1rem;
+
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  display: block;
+  height: 40px;
+  border: 2px solid #777;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.searchBar_title__U8ewF {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3NlYXJjaEJhci9zZWFyY2hCYXIubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1COztFQUVuQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2QsWUFBWTtFQUNaLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixZQUFZO0VBQ1osaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsVUFBVTtFQUNWLGlCQUFpQjtBQUNuQiIsInNvdXJjZXNDb250ZW50IjpbIi5zZWFyY2gge1xuICBkaXNwbGF5OiBmbGV4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzMzO1xuICBtYXJnaW4tYm90dG9tOiAxcmVtO1xuXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG5mb3JtIHtcbiAgd2lkdGg6IDgwJTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuaW5wdXQge1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogNDBweDtcbiAgYm9yZGVyOiAycHggc29saWQgIzc3NztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cblxuLnRpdGxlIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgY29sb3I6IHdoaXRlO1xuICBtYXJnaW4tcmlnaHQ6IDJyZW07XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuaW1nIHtcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xufVxuXG5oMSB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgZm9udC1zaXplOiAxLjVyZW07XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>iframe {
+  width: 100%;
+  height: 50vw;
+  max-height: 500px;
+}
+
+h1,
+h4,
+p {
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  padding-top: 0px 20px;
+}
+.detail_description__zdxhJ {
+  margin-top: 50vw;
+}
+
+@media screen and (max-width: 1000px) {
+  iframe {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2RldGFpbC9kZXRhaWwubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osaUJBQWlCO0FBQ25COztBQUVBOzs7RUFHRSxZQUFZO0VBQ1osYUFBYTtFQUNiLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFNBQVM7RUFDVCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFO0lBQ0UsZUFBZTtJQUNmLE1BQU07SUFDTixZQUFZO0VBQ2Q7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbImlmcmFtZSB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDUwdnc7XG4gIG1heC1oZWlnaHQ6IDUwMHB4O1xufVxuXG5oMSxcbmg0LFxucCB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMjBweDtcbiAgbWFyZ2luOiAwO1xufVxuXG5oNCB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZy10b3A6IDBweCAyMHB4O1xufVxuLmRlc2NyaXB0aW9uIHtcbiAgbWFyZ2luLXRvcDogNTB2dztcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTAwMHB4KSB7XG4gIGlmcmFtZSB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICB6LWluZGV4OiAxMDA7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body cz-shortcut-listen="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="searchBar_search__SjM+Z"><div class="searchBar_title__U8ewF"><img src="./KongTube_files/logo.png" alt="logo" width="50" height="25"><h1>KONGTUBE</h1></div><form><input type="text" value=""></form></div><div class="content"><div class="detail"><div><iframe title="Detail" src="./KongTube_files/e5GdT7X47mQ.html" frameborder="0" allowfullscreen=""></iframe><div class="detail_description__zdxhJ"><h1>[임영광] 문명으로의 첫걸음.. 이걸 어쩌죠 🥺</h1><h4>2022-01-17T11:40:00Z</h4><p>#임영광 #임영웅 #LimYoungWoong
+
+임영웅 웅튜브 
+구독♡좋아요♡알람설정
+열심히 할게요/당신도 누를수 있도록 
+
+Lim Young Woong  [I'm HERO] Youtube Channel
+Subscribe Like Alert Setting 
+Thank You♡
+
+공식 팬카페 [영웅시대]
+http://cafe.daum.net/hero0616</p></div></div></div><div class="list"><div class="videoList_videos__NmqaL"><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault.jpg" alt="thumbnails"><h3 class="video_title__VIl1k">[임영광] 문명으로의 첫걸음.. 이걸 어쩌죠 🥺</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(1).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">앙예원TV | 솔로지옥 안예원x차현승 솔직리뷰, "오빠 천국도 ...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(2).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">[#유퀴즈온더블럭] 가죽바지 입고 등장한 월드 스타✨ 이정재가 ...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(3).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">YENA (최예나) - SMILEY (Feat. BIBI) MV...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(4).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">TAEYEON 태연 'Can't Control Myself' M...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(5).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">해외에서 난리난 초콜렛을 공짜로 먹는 방법</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(6).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">fromis_9 (프로미스나인) 'DM' Official MV</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(7).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">감자 딱 반개 배부르게 먹는법</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(8).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">국가대표와 K리거들의 비시즌 축구 경기?! 경기력 미쳤네 ㄷㄷ;...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(9).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">“천군만마”로 글짓기 하라고 했더니🤣🤣🤣#세아쌤따라중국어 ...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(10).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">Can't Control Myself</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(11).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">ONE FC 윤창민은 레전드 박종팔의 주먹을 피할 수 있을까!!...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(12).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">이례적 해저 화산 쓰나미…“1,000년에 한번 있을 초강력 분화...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(13).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">더 미친 방들이 지원 했습니다.. [방 자랑대회2]</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(14).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">어릴 때 통하는 “마법의 단어”</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(15).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">특별 선공개! 딩가딩가 연주회 스페셜 초대 가수!? 지금껏 이런...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(16).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">데드 110kg 드는 여자 #shorts</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(17).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">[재미TV] 다시 만난 정적?! 2022 국민 손자 쟁탈전!! ...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(18).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">솔로지옥 QnA 💁🏻♀ 제일 많이 한 질문 답하기 ft. 집...</h3></div><div class="video_video__GUJ8z"><img class="video_thumbnail__Yl53S" src="./KongTube_files/hqdefault(19).jpg" alt="thumbnails"><h3 class="video_title__VIl1k">자기암시 박수👏</h3></div></div></div></div></div></div>
+  
+
+</body></html>
