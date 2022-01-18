@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  cursor: pointer;
+  transition: all 250ms;
+}
+.thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.title {
+}
